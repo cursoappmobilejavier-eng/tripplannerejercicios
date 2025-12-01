@@ -153,7 +153,7 @@
             </objects>
             <point key="canvasLocation" x="684.73282442748086" y="48.591549295774648"/>
         </scene>
-        <!--My trips-->
+        <!--Mi Instrumento-->
         <scene sceneID="Jjh-a9-eZa">
             <objects>
                 <viewController id="nc5-Qn-zWc" sceneMemberID="viewController">
@@ -163,13 +163,13 @@
                         <viewLayoutGuide key="safeArea" id="R35-Gz-1dD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My trips" id="BTu-C8-6ig"/>
+                    <navigationItem key="navigationItem" title="Mi Instrumento" id="BTu-C8-6ig"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7U-7P-2Bu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-245" y="2415"/>
         </scene>
-        <!--New trip-->
+        <!--Nuevo instrumento-->
         <scene sceneID="2zb-sl-pMY">
             <objects>
                 <viewController id="SNe-sr-66S" sceneMemberID="viewController">
@@ -199,7 +199,7 @@
                             <constraint firstItem="x6y-xK-6Aw" firstAttribute="bottom" secondItem="kM7-hf-PrR" secondAttribute="bottom" id="zOr-Po-bWL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New trip" id="8rT-6A-AGg"/>
+                    <navigationItem key="navigationItem" title="Nuevo instrumento" id="8rT-6A-AGg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qlW-0s-dcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +214,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" systemColor="systemIndigoColor"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemRedColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="Vs8-uC-cSO" kind="relationship" relationship="viewControllers" id="cw0-ef-PQP"/>
@@ -226,7 +227,7 @@
             </objects>
             <point key="canvasLocation" x="685" y="849"/>
         </scene>
-        <!--Settings-->
+        <!--Configuracion-->
         <scene sceneID="xdB-7W-bc2">
             <objects>
                 <viewController id="ZiR-zU-Dwq" customClass="SettingsViewController" customModule="tripplannerejercicios" customModuleProvider="target" sceneMemberID="viewController">
@@ -238,11 +239,11 @@
                                 <rect key="frame" x="0.0" y="172" width="393" height="563"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkg-F5-y6e">
-                                        <rect key="frame" x="153" y="520" width="87" height="35"/>
+                                        <rect key="frame" x="168" y="520" width="58" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Sign out"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Salir"/>
                                         <connections>
                                             <action selector="signOut:" destination="ZiR-zU-Dwq" eventType="touchUpInside" id="cf6-qU-zYL"/>
                                         </connections>
@@ -260,7 +261,7 @@
                             <constraint firstItem="d2Q-r7-Pqu" firstAttribute="leading" secondItem="3X9-gf-LSW" secondAttribute="leading" id="ib9-Ns-QAj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="eHM-H2-gro"/>
+                    <navigationItem key="navigationItem" title="Configuracion" id="eHM-H2-gro"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKi-Ym-OFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -471,15 +472,16 @@
             </objects>
             <point key="canvasLocation" x="-244" y="49"/>
         </scene>
-        <!--My trips-->
+        <!--Mis instrumentos-->
         <scene sceneID="9hA-qS-fyC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vs8-uC-cSO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My trips" image="airplane.circle" catalog="system" selectedImage="airplane.circle.fill" id="kKd-I9-lFr"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vs8-uC-cSO" userLabel="Mis instrumentos" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mi Instrumento" image="guitars.fill" catalog="system" selectedImage="pianokeys" id="kKd-I9-lFr" userLabel="Mis instrumentos"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wq7-5j-Kh4">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemRedColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -490,11 +492,11 @@
             </objects>
             <point key="canvasLocation" x="-245.03816793893128" y="1638.7323943661972"/>
         </scene>
-        <!--New trip-->
+        <!--Nuevo instrumentos-->
         <scene sceneID="K4N-rm-Clg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5sh-ly-ZwY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="New trip" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="bRe-Cn-qxT"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5sh-ly-ZwY" userLabel="Nuevo instrumentos" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Nuevo instrumento" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="bRe-Cn-qxT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hgQ-Ir-wsS">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
@@ -509,11 +511,11 @@
             </objects>
             <point key="canvasLocation" x="684.73282442748086" y="1638.7323943661972"/>
         </scene>
-        <!--Settings-->
+        <!--Configuracion-->
         <scene sceneID="5Df-he-8yV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CV2-Ku-wuW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear.circle" catalog="system" selectedImage="gear.circle.fill" id="iIx-mT-wCx"/>
+                    <tabBarItem key="tabBarItem" title="Configuracion" image="gear.circle" catalog="system" selectedImage="gear.circle.fill" id="iIx-mT-wCx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Fd-hd-8Sj">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
@@ -534,12 +536,12 @@
         <image name="Apple" width="24" height="24"/>
         <image name="Facebook" width="24" height="24"/>
         <image name="Google" width="24" height="24"/>
-        <image name="airplane.circle" catalog="system" width="128" height="123"/>
-        <image name="airplane.circle.fill" catalog="system" width="128" height="123"/>
         <image name="gear.circle" catalog="system" width="128" height="123"/>
         <image name="gear.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="guitars.fill" catalog="system" width="128" height="104"/>
         <image name="music.note.list" catalog="system" width="128" height="115"/>
         <image name="music.quarternote.3" catalog="system" width="128" height="102"/>
+        <image name="pianokeys" catalog="system" width="128" height="93"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
