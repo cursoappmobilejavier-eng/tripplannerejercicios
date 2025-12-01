@@ -386,7 +386,7 @@
                                                 <segments>
                                                     <segment title="Piano"/>
                                                     <segment title="Guitarra"/>
-                                                    <segment title="Other"/>
+                                                    <segment title="Otros"/>
                                                 </segments>
                                             </segmentedControl>
                                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="OJ4-ip-jWH">
