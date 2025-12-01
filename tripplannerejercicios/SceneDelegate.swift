@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  tripplannerejercicios
+//  TripPlanner
 //
-//  Created by MananasNew on 21/11/25.
+//  Created by Mananas on 20/11/25.
 //
 
 import UIKit
