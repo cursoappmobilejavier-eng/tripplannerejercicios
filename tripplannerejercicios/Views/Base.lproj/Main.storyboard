@@ -54,7 +54,7 @@
                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jr-Dk-2S3">
-                                                <rect key="frame" x="8" y="338" width="160" height="35"/>
+                                                <rect key="frame" x="7" y="338" width="160" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                 <state key="normal" title="Button"/>
@@ -108,7 +108,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3b-uf-V82">
-                                                <rect key="frame" x="261" y="451" width="124" height="35"/>
+                                                <rect key="frame" x="260" y="451" width="124" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                                 <state key="normal" title="Button"/>
@@ -153,57 +153,89 @@
             </objects>
             <point key="canvasLocation" x="684.73282442748086" y="48.591549295774648"/>
         </scene>
-        <!--Mi Instrumento-->
+        <!--InstrumentsListViewController-->
         <scene sceneID="Jjh-a9-eZa">
             <objects>
-                <viewController id="nc5-Qn-zWc" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7U-7P-2Bu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController title="InstrumentsListViewController" id="nc5-Qn-zWc" customClass="InstrumentsListViewController" customModule="tripplannerejercicios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WAT-ya-FDe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NRT-Ds-oIe">
+                                <rect key="frame" x="0.0" y="172" width="393" height="563"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="R35-Gz-1dD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R35-Gz-1dD" firstAttribute="trailing" secondItem="NRT-Ds-oIe" secondAttribute="trailing" id="0oE-w1-Z9F"/>
+                            <constraint firstItem="NRT-Ds-oIe" firstAttribute="top" secondItem="R35-Gz-1dD" secondAttribute="top" id="DQm-pb-7Ym"/>
+                            <constraint firstItem="NRT-Ds-oIe" firstAttribute="leading" secondItem="R35-Gz-1dD" secondAttribute="leading" id="KZq-tg-uIP"/>
+                            <constraint firstItem="R35-Gz-1dD" firstAttribute="bottom" secondItem="NRT-Ds-oIe" secondAttribute="bottom" id="cyu-9H-lo3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mi Instrumento" id="BTu-C8-6ig"/>
+                    <connections>
+                        <outlet property="tableView" destination="NRT-Ds-oIe" id="mGv-sy-kzh"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O7U-7P-2Bu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-245" y="2415"/>
         </scene>
-        <!--Nuevo instrumento-->
+        <!--AddIntrumentViewController-->
         <scene sceneID="2zb-sl-pMY">
             <objects>
-                <viewController id="SNe-sr-66S" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddInstrumentViewController" title="AddInstrumentViewController" id="SNe-sr-66S" userLabel="AddIntrumentViewController" customClass="AddInstrumentViewController" customModule="tripplannerejercicios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VPG-Ym-cEH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kM7-hf-PrR">
-                                <rect key="frame" x="66" y="268" width="240" height="128"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ns-SS-fUV" userLabel="ScrollView">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="ROa-wG-RCS"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="GLm-ih-JJ0"/>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-cj-Tev">
+                                <rect key="frame" x="0.0" y="172" width="393" height="563"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="qig-HC-elQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Guardar"/>
+                                    <connections>
+                                        <action selector="guardarTapped:" destination="SNe-sr-66S" eventType="touchUpInside" id="Nk8-Ol-y6g"/>
+                                    </connections>
+                                </button>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Marca:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-V9-Wwf">
+                                <rect key="frame" x="7" y="264" width="386" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Modelo:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehj-ep-9aM">
+                                <rect key="frame" x="7" y="323" width="386" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x6y-xK-6Aw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kM7-hf-PrR" firstAttribute="top" secondItem="x6y-xK-6Aw" secondAttribute="top" id="Z55-Z6-HOi"/>
-                            <constraint firstItem="x6y-xK-6Aw" firstAttribute="trailing" secondItem="kM7-hf-PrR" secondAttribute="trailing" id="ev0-zF-NdP"/>
-                            <constraint firstItem="kM7-hf-PrR" firstAttribute="leading" secondItem="x6y-xK-6Aw" secondAttribute="leading" id="tl2-Qc-LuC"/>
-                            <constraint firstItem="x6y-xK-6Aw" firstAttribute="bottom" secondItem="kM7-hf-PrR" secondAttribute="bottom" id="zOr-Po-bWL"/>
+                            <constraint firstItem="x6y-xK-6Aw" firstAttribute="bottom" secondItem="m5B-cj-Tev" secondAttribute="bottom" id="Fdd-Dr-uTc"/>
+                            <constraint firstItem="x6y-xK-6Aw" firstAttribute="trailing" secondItem="m5B-cj-Tev" secondAttribute="trailing" id="cn6-7h-FOo"/>
+                            <constraint firstItem="m5B-cj-Tev" firstAttribute="top" secondItem="x6y-xK-6Aw" secondAttribute="top" id="qTa-Pw-imO"/>
+                            <constraint firstItem="m5B-cj-Tev" firstAttribute="leading" secondItem="x6y-xK-6Aw" secondAttribute="leading" id="yjp-d0-1F7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Nuevo instrumento" id="8rT-6A-AGg"/>
+                    <connections>
+                        <outlet property="modeloTextField" destination="6rm-V9-Wwf" id="b5Z-26-WWp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qlW-0s-dcu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685" y="2415"/>
+            <point key="canvasLocation" x="684.73282442748086" y="2414.7887323943664"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="bOa-a0-BHf">
@@ -551,19 +583,19 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.38039215686274508" green="0.33333333333333331" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.2196078431372549" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.53333333333333333" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
