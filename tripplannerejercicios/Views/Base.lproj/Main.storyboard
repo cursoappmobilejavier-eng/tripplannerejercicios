@@ -156,7 +156,6 @@
         <!--InstrumentsListViewController-->
         <scene sceneID="Jjh-a9-eZa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O7U-7P-2Bu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="InstrumentsListViewController" id="nc5-Qn-zWc" customClass="InstrumentsListViewController" customModule="tripplannerejercicios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WAT-ya-FDe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -181,6 +180,7 @@
                         <outlet property="tableView" destination="NRT-Ds-oIe" id="mGv-sy-kzh"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7U-7P-2Bu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-245" y="2415"/>
         </scene>
@@ -195,25 +195,40 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-cj-Tev">
                                 <rect key="frame" x="0.0" y="172" width="393" height="563"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="qig-HC-elQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" systemColor="systemRedColor"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Guardar"/>
-                                    <connections>
-                                        <action selector="guardarTapped:" destination="SNe-sr-66S" eventType="touchUpInside" id="Nk8-Ol-y6g"/>
-                                    </connections>
-                                </button>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Marca:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-V9-Wwf">
-                                <rect key="frame" x="7" y="264" width="386" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="e6M-p8-bgC">
+                                <rect key="frame" x="108" y="404" width="176" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="-1" height="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Guardar">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="guardarTapped:" destination="SNe-sr-66S" eventType="touchUpInside" id="Qhb-Ek-0Wm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-V9-Wwf">
+                                <rect key="frame" x="71" y="273" width="315" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Modelo:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehj-ep-9aM">
-                                <rect key="frame" x="7" y="323" width="386" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehj-ep-9aM">
+                                <rect key="frame" x="71" y="326" width="315" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Modelo:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSd-N3-4hL">
+                                <rect key="frame" x="11" y="326" width="73" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Marca:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7Y-NE-XS9">
+                                <rect key="frame" x="11" y="273" width="73" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -222,14 +237,16 @@
                         <viewLayoutGuide key="safeArea" id="x6y-xK-6Aw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="m5B-cj-Tev" firstAttribute="centerX" secondItem="VPG-Ym-cEH" secondAttribute="centerX" id="EQ9-wc-6rp"/>
                             <constraint firstItem="x6y-xK-6Aw" firstAttribute="bottom" secondItem="m5B-cj-Tev" secondAttribute="bottom" id="Fdd-Dr-uTc"/>
                             <constraint firstItem="x6y-xK-6Aw" firstAttribute="trailing" secondItem="m5B-cj-Tev" secondAttribute="trailing" id="cn6-7h-FOo"/>
                             <constraint firstItem="m5B-cj-Tev" firstAttribute="top" secondItem="x6y-xK-6Aw" secondAttribute="top" id="qTa-Pw-imO"/>
                             <constraint firstItem="m5B-cj-Tev" firstAttribute="leading" secondItem="x6y-xK-6Aw" secondAttribute="leading" id="yjp-d0-1F7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Nuevo instrumento" id="8rT-6A-AGg"/>
+                    <navigationItem key="navigationItem" title="Nuevo Instrumento" id="8rT-6A-AGg"/>
                     <connections>
+                        <outlet property="marcaTextField" destination="6rm-V9-Wwf" id="Pm6-OU-nEO"/>
                         <outlet property="modeloTextField" destination="6rm-V9-Wwf" id="b5Z-26-WWp"/>
                     </connections>
                 </viewController>
