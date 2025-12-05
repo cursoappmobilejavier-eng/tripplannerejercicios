@@ -15,16 +15,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C270D7182ED05F2C00CDF1DB /* tripplannerejercicios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tripplannerejercicios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C270D7182ED05F2C00CDF1DB /* instrumentappejercicios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instrumentappejercicios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C270D72A2ED05F2D00CDF1DB /* Exceptions for "tripplannerejercicios" folder in "tripplannerejercicios" target */ = {
+		C270D72A2ED05F2D00CDF1DB /* Exceptions for "tripplannerejercicios" folder in "instrumentappejercicios" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = C270D7172ED05F2C00CDF1DB /* tripplannerejercicios */;
+			target = C270D7172ED05F2C00CDF1DB /* instrumentappejercicios */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -32,7 +32,7 @@
 		C270D71A2ED05F2C00CDF1DB /* tripplannerejercicios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				C270D72A2ED05F2D00CDF1DB /* Exceptions for "tripplannerejercicios" folder in "tripplannerejercicios" target */,
+				C270D72A2ED05F2D00CDF1DB /* Exceptions for "tripplannerejercicios" folder in "instrumentappejercicios" target */,
 			);
 			path = tripplannerejercicios;
 			sourceTree = "<group>";
@@ -67,7 +67,7 @@
 		C270D7192ED05F2C00CDF1DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C270D7182ED05F2C00CDF1DB /* tripplannerejercicios.app */,
+				C270D7182ED05F2C00CDF1DB /* instrumentappejercicios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C270D7172ED05F2C00CDF1DB /* tripplannerejercicios */ = {
+		C270D7172ED05F2C00CDF1DB /* instrumentappejercicios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C270D72B2ED05F2D00CDF1DB /* Build configuration list for PBXNativeTarget "tripplannerejercicios" */;
+			buildConfigurationList = C270D72B2ED05F2D00CDF1DB /* Build configuration list for PBXNativeTarget "instrumentappejercicios" */;
 			buildPhases = (
 				C270D7142ED05F2C00CDF1DB /* Sources */,
 				C270D7152ED05F2C00CDF1DB /* Frameworks */,
@@ -97,7 +97,7 @@
 			fileSystemSynchronizedGroups = (
 				C270D71A2ED05F2C00CDF1DB /* tripplannerejercicios */,
 			);
-			name = tripplannerejercicios;
+			name = instrumentappejercicios;
 			packageProductDependencies = (
 				C270D7332ED0687C00CDF1DB /* FirebaseAnalytics */,
 				C270D7352ED0687C00CDF1DB /* FirebaseAuth */,
@@ -106,7 +106,7 @@
 				C28886D12ED87EE300690796 /* GoogleSignInSwift */,
 			);
 			productName = tripplannerejercicios;
-			productReference = C270D7182ED05F2C00CDF1DB /* tripplannerejercicios.app */;
+			productReference = C270D7182ED05F2C00CDF1DB /* instrumentappejercicios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C270D7132ED05F2C00CDF1DB /* Build configuration list for PBXProject "tripplannerejercicios" */;
+			buildConfigurationList = C270D7132ED05F2C00CDF1DB /* Build configuration list for PBXProject "instrumentappejercicios" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -142,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C270D7172ED05F2C00CDF1DB /* tripplannerejercicios */,
+				C270D7172ED05F2C00CDF1DB /* instrumentappejercicios */,
 			);
 		};
 /* End PBXProject section */
@@ -352,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C270D7132ED05F2C00CDF1DB /* Build configuration list for PBXProject "tripplannerejercicios" */ = {
+		C270D7132ED05F2C00CDF1DB /* Build configuration list for PBXProject "instrumentappejercicios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C270D72E2ED05F2D00CDF1DB /* Debug */,
@@ -361,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C270D72B2ED05F2D00CDF1DB /* Build configuration list for PBXNativeTarget "tripplannerejercicios" */ = {
+		C270D72B2ED05F2D00CDF1DB /* Build configuration list for PBXNativeTarget "instrumentappejercicios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C270D72C2ED05F2D00CDF1DB /* Debug */,
